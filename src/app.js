@@ -1,5 +1,7 @@
 const express = require('express');
 
+const login = require('./routes/login');
+
 const app = express();
 
 app.get('/', (_request, response) => {
@@ -8,8 +10,8 @@ app.get('/', (_request, response) => {
 
 app.use(express.json());
 app.use('/login', login);
-app.use('/register', register);
-app.use('/homePage', homePage);
-app.use('/userPage', userPage);
+//app.use('/register', register);
+//app.use('/homePage', homePage);
+//app.use('/userPage', userPage);
 
 module.exports = app;
