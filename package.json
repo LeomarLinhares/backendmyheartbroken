@@ -4,7 +4,8 @@
   "description": "Back-end do projeto My Heartbroken",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon ."
   },
   "author": "Jessica e Leomar",
   "license": "ISC",
