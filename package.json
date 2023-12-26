@@ -2,14 +2,16 @@
   "name": "backendmyheartbroken",
   "version": "1.0.0",
   "description": "Back-end do projeto My Heartbroken",
-  "main": "index.js",
+  "main": "src/server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon ."
+    "dev": "nodemon .",
+    "start": "node ."
   },
   "author": "Jessica e Leomar",
   "license": "ISC",
   "dependencies": {
+    "express": "^4.18.2",
     "mysql2": "2.1.0",
     "sequelize": "6.3.4"
   },
