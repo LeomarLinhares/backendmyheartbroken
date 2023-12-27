@@ -1,6 +1,6 @@
 module.exports = (sequelize, DataTypes) => {
     const Reason = sequelize.define('Reason', {
-        reasonId: {
+        id: {
             allowNull: false,
             autoIncrement: true,
             primaryKey: true,
@@ -30,7 +30,7 @@ module.exports = (sequelize, DataTypes) => {
 );
 Reason.associate = (models) => {
     models.Reason.belongsTo(models.User, {
-    foreignKey: 'user_id',
+    foreignKey: 'id',
     })
 }
 return Reason;
